@@ -7,6 +7,7 @@ import TaskCompleted from '../components/TaskCompleted'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'	
 import { faTrash } from '@fortawesome/free-solid-svg-icons'	
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons'
+import Wave from 'react-wavify'
 
 
 const checkButtonIcon = <FontAwesomeIcon icon={faCheckSquare} color="#F7727D"/>	
@@ -151,13 +152,32 @@ function Home({  brewList, setBrewListFunction}) {
               </p>
             </div>
             
+            {/*
             <div class="progress">
             <div class="circle">
             <div class="wave"></div>
               </div>
             </div>
-           
-
+            */}
+            
+          <div class="progress">
+            <Wave mask="url(#mask)" fill="white" options={{
+            height: calcProgressBar(brewList[nBrew]['sugarAmount'], brewList[nBrew]['finalDate']),
+            amplitude: 2,
+            speed: 0.25,
+            points: 3}}>
+              
+              <defs>
+                <linearGradient id="gradient" gradientTransform="rotate(90)">
+                  <stop offset="1.0" stopColor="white" />
+                  <stop offset="4.5" stopColor="black" />
+                </linearGradient>
+                <mask id="mask">
+                  <rect x="0" y="0" width="2000" height="71" fill="url(#gradient)"  />
+                </mask>
+              </defs>
+            </Wave>
+          </div>
               {/*   
             <div id="mitt"> 
             <div class="wave1"> </div>
@@ -175,15 +195,15 @@ function Home({  brewList, setBrewListFunction}) {
 
           <div class="bottom">
 
-            <div class="vänster"> <p class="övertext"> { } </p>
-              <p class="undertext"> Satser : {brewList[nBrew]['volumeBatch']}</p></div>
+            <div class="vänster"> <p class="övertext"> {brewList[nBrew]['volumeBatch']} </p>
+              <p class="undertext"> Satser </p></div>
 
             <div class="mitten"> <p class="övertext"> {Math.round(calcAlcohol(brewList[nBrew]['ratio'],brewList[nBrew]['sugarAmount']))}% </p>
               <p class="undertext"> Alkohol </p> </div>
 
 
-            <div class="höger"> <p class="övertext"> { } </p>
-              <p class="undertext"> Liter totalt: {Math.round(brewList[nBrew]['volumeLiter'])} </p>
+            <div class="höger"> <p class="övertext"> {Math.round(brewList[nBrew]['volumeLiter']) } </p>
+              <p class="undertext"> Liter totalt  </p>
             </div>
 
           </div>
@@ -265,8 +285,24 @@ function Home({  brewList, setBrewListFunction}) {
       return ratio * 0.01 * 14;
     }
   }
+
+  function calcProgressBar(sugarAmount, finalDate){ //Returnar värden mellan 5 och 60
+var daysUntilDone = daysBetween(new Date(), new Date(finalDate));
+console.log("Days:")
+console.log(daysUntilDone)
+    if(sugarAmount === "3.5"){ //En bryggning tar 8 dagar
+      console.log((60 - 55*((8-daysUntilDone)/8)))
+      return (60 - 55*((8-daysUntilDone)/8))
+
+    }else{ // 4.5 kg socker, en bryggning tar 14 dagar
+      console.log((60 - 55*((14-daysUntilDone)/14)))
+      return (60 - 55*((14-daysUntilDone)/14))
+    }
+
+  }
   
 }
+
 
 
 
