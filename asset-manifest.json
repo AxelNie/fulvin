@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/fulvin/static/css/main.4f74d31e.chunk.css",
-    "main.js": "/fulvin/static/js/main.07cdf9c0.chunk.js",
-    "main.js.map": "/fulvin/static/js/main.07cdf9c0.chunk.js.map",
-    "runtime-main.js": "/fulvin/static/js/runtime-main.df19d152.js",
-    "runtime-main.js.map": "/fulvin/static/js/runtime-main.df19d152.js.map",
+    "main.css": "/fulvin/static/css/main.12fd062c.chunk.css",
+    "main.js": "/fulvin/static/js/main.46540557.chunk.js",
+    "main.js.map": "/fulvin/static/js/main.46540557.chunk.js.map",
+    "runtime-main.js": "/fulvin/static/js/runtime-main.d6cadc7e.js",
+    "runtime-main.js.map": "/fulvin/static/js/runtime-main.d6cadc7e.js.map",
     "static/css/2.0c21754d.chunk.css": "/fulvin/static/css/2.0c21754d.chunk.css",
-    "static/js/2.b0dec577.chunk.js": "/fulvin/static/js/2.b0dec577.chunk.js",
-    "static/js/2.b0dec577.chunk.js.map": "/fulvin/static/js/2.b0dec577.chunk.js.map",
-    "static/js/3.3335d75b.chunk.js": "/fulvin/static/js/3.3335d75b.chunk.js",
-    "static/js/3.3335d75b.chunk.js.map": "/fulvin/static/js/3.3335d75b.chunk.js.map",
+    "static/js/2.6633fbd5.chunk.js": "/fulvin/static/js/2.6633fbd5.chunk.js",
+    "static/js/2.6633fbd5.chunk.js.map": "/fulvin/static/js/2.6633fbd5.chunk.js.map",
+    "static/js/3.e9b68690.chunk.js": "/fulvin/static/js/3.e9b68690.chunk.js",
+    "static/js/3.e9b68690.chunk.js.map": "/fulvin/static/js/3.e9b68690.chunk.js.map",
     "index.html": "/fulvin/index.html",
     "static/css/2.0c21754d.chunk.css.map": "/fulvin/static/css/2.0c21754d.chunk.css.map",
-    "static/css/main.4f74d31e.chunk.css.map": "/fulvin/static/css/main.4f74d31e.chunk.css.map",
-    "static/js/2.b0dec577.chunk.js.LICENSE.txt": "/fulvin/static/js/2.b0dec577.chunk.js.LICENSE.txt",
+    "static/css/main.12fd062c.chunk.css.map": "/fulvin/static/css/main.12fd062c.chunk.css.map",
+    "static/js/2.6633fbd5.chunk.js.LICENSE.txt": "/fulvin/static/js/2.6633fbd5.chunk.js.LICENSE.txt",
     "static/media/EnterInfo.css": "/fulvin/static/media/vitdot.png.c073a39a.png",
     "static/media/Home.css": "/fulvin/static/media/pil_lila.0307e810.png",
     "static/media/App.css": "/fulvin/static/media/pil_vit.95e18d8c.png",
     "static/media/ReceptPage.css": "/fulvin/static/media/wave.a3c10823.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.df19d152.js",
+    "static/js/runtime-main.d6cadc7e.js",
     "static/css/2.0c21754d.chunk.css",
-    "static/js/2.b0dec577.chunk.js",
-    "static/css/main.4f74d31e.chunk.css",
-    "static/js/main.07cdf9c0.chunk.js"
+    "static/js/2.6633fbd5.chunk.js",
+    "static/css/main.12fd062c.chunk.css",
+    "static/js/main.46540557.chunk.js"
   ]
 }
