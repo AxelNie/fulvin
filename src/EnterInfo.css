@@ -1,0 +1,394 @@
+
+
+button.tillbaka
+{
+     width: 10.1vw;
+     height: 10vw;
+     font-size: 8pt;
+     background-image: url(./backarrow.png) ;
+      background-size: 10vw 10vw;
+     margin-top: 1px;
+     margin-right: 2px;
+     position:absolute;
+     top:5%;
+     left:0;
+     border: 0;
+     
+}
+
+.EnterInfoone{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(254, 150, 119, 1) 0%,
+    rgba(237, 72, 99, 1) 100%
+  );
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+}
+
+.footer_dot
+{
+  position: fixed;
+  bottom: 15%;
+  width: 80vw;
+  height:4vw;
+  margin-left: 30%;
+}
+
+.grey
+{
+  display: inline-block;
+  background-image: url(./vitdot.png.png) ;
+  opacity: 0.5;
+  background-repeat:no-repeat;
+  background-size: 3vw 3vw;
+  width: 3vw;
+  height:3vw;
+  margin-left: 10%;
+  margin-left: 10%;
+}
+
+.white
+{
+  display: inline-block;
+  background-image: url(./vitdot.png.png) ;
+  background-repeat:no-repeat;
+  background-size: 3vw 3vw;
+  width: 3vw;
+  height:3vw;
+  
+  margin-left: 10%;
+  margin-left: 10%;
+}
+
+#top
+{
+top:0%;
+position: fixed;
+height: 40vw;
+width: 100vw;
+background-image: url(./wave.png) ;
+background-size: 100vw 40vw;
+}
+
+#theText
+{
+    position: fixed;
+    top: 40%;
+    left: 15%;
+    height: 30vw;
+    width: 100vw;;
+}
+
+
+.btn-group
+{
+  
+  font-family: 'Varela Round', sans-serif;
+}
+
+h1
+{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    color: #933f5f;
+    margin-top: 11%;
+}
+
+
+Input[type=text] {
+        width: 70vw;
+        height: 10vw;
+        float: center;
+        text-align:center;
+        padding: 12px 20px;
+        margin: 8px 0;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        border-radius: 4rem;
+        border: none;
+        color: white;
+        background-color: #cd5b5f;
+        font-size: 6vw;
+        font-family: 'Varela Round', sans-serif;
+        text-shadow: none;
+}
+
+
+
+::placeholder
+{
+    color: white;
+}
+
+#info{
+  font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    color: #f9f9f9;
+   margin-bottom: 20vw; 
+}
+
+div.Button
+{
+  top:80% ;
+  left: 25%;
+  z-index: 1;
+
+}
+
+#content 
+{
+  position: fixed;
+    top: 30%;
+    left: 5%;
+    height: 80vw;
+    width: 90vw;; 
+}
+
+span.react-calendar__navigation__label__labelText
+ {
+  font-family: 'Varela Round', sans-serif;
+  font: 'Varela Round', sans-serif;
+  color: white;
+ }
+
+ button.react-calendar__navigation__label
+ {
+  font-family: 'Varela Round', sans-serif;
+  font: 'Varela Round', sans-serif;
+   font-size: 5vw;
+ }
+
+ button.react-calendar__navigation__arrow 
+ {color: white;
+}
+
+ div.react-calendar
+ {
+  background-color: #d45e66;
+  border: none;
+  position: relative;
+  z-index: 999;
+ }
+
+ /* dagens datum */
+ button.react-calendar__tile--now
+ {
+  background-color: #d45e66;
+  text-decoration: underline dotted #572f31;
+  border: 2px dotted #572f31 !important; 
+ }
+
+ /* de valda*/
+button.react-calendar__tile--active 
+{background-color: #9b5357;}
+
+abbr{
+  font-family: 'Varela Round', sans-serif;
+  font: 'Varela Round', sans-serif;
+  font-size: 3vw;
+  color: white;
+}
+
+ button.react-calendar__tile 
+{
+  width: 10vw;
+  font-family: 'Varela Round', sans-serif;
+  font: 'Varela Round', sans-serif;
+  
+}
+
+div.react-date-picker__inputGroup
+{
+flex-grow: 0;
+}
+
+ div.react-calendar__month-view__weekdays__weekday
+ {
+  width: 5vw;
+  font-family: 'Varela Round', sans-serif;
+  font: 'Varela Round', sans-serif;
+ }
+
+ input.react-date-picker__inputGroup__input 
+{
+  font-family: 'Varela Round', sans-serif !important;
+  font-size: 7vw;
+  color:white;
+  width: 45vw;
+}
+
+div.react-date-picker__wrapper
+{
+  border:none;
+  width: 80vw;
+  padding-left: 15vw;
+}
+
+button.react-date-picker__clear-button 
+{
+  color: white;
+  size: 7vw;
+}
+
+svg.react-date-picker__clear-button__icon 
+{stroke:white;
+  
+  }
+
+svg.react-date-picker__calendar-button__icon 
+{
+  stroke:white;
+}
+
+span.react-date-picker__inputGroup__divider
+{
+  color:white;
+  font-size: 7vw;
+}
+
+span.MuiSlider-root
+{
+  color:#933f5f;
+}
+
+#link_home
+{ 
+font-family: "Montserrat", sans-serif;
+font-weight: 600;
+ font-size: 4vw;
+ text-decoration:none;
+ margin: 0 auto;
+ text-align:center;
+ color: white;
+}
+
+#finalText
+{
+  font-family: 'Varela Round', sans-serif ;
+  position: absolute;
+  top:40%;
+  color: white;
+}
+
+#tillbakaa
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #933f5f;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 4rem;
+  width: 60vw;
+  margin: 0;
+  height: 10vw; 
+  position: absolute;
+  top:55%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+  
+}
+
+button.right_btnn
+{
+width: 35vw;
+float: right;
+right: 0%;
+height: 10vw;
+border-radius: 4rem;
+border: none;
+position: absolute;
+
+color: #cd5b5f;
+font-family: 'Varela Round', sans-serif ;
+text-align: center;
+}
+
+
+
+button.left_btnn
+{
+float:left;
+width: 35vw;
+height: 10vw;
+border-radius: 4rem;
+border: none;
+color: #cd5b5f;
+position: absolute;
+font-family: 'Varela Round', sans-serif ;
+
+}
+
+button#right_btnnn
+{
+width: 35vw;
+float: right;
+right: 0%;
+height: 10vw;
+border-radius: 4rem;
+border: none;
+position: absolute;
+color: #cd5b5f;
+font-family: 'Varela Round', sans-serif ;
+text-align: center;
+}
+
+
+button#left_btnnn
+{
+  float:left;
+width: 35vw;
+height: 10vw;
+border-radius: 4rem;
+border: none;
+color: #cd5b5f;
+
+position: absolute;
+font-family: 'Varela Round', sans-serif ;
+}
+
+
+.btn-group
+{
+  display: inline;
+  height: 10vw;
+width: 60vw;
+position: absolute;
+top: 18%;
+left: 17%;
+margin:auto;
+}
+
+#left_div
+{
+width: 10vw;
+float: left;
+margin: auto;
+
+font-family: 'Varela Round', sans-serif ;
+
+}
+
+#right_div
+{
+  float:right;
+  margin: auto;
+  width: 35vw;
+height: 10vw;
+color: black;
+text-align: right;
+font-family: 'Varela Round', sans-serif ;
+}

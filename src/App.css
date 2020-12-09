@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.Wrapper {
+  height: 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(254, 150, 119, 1) 0%,
+    rgba(237, 72, 99, 1) 100%
+  );
+}
+
+
+
+#brygg_klar
+{
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+}
+
+div.Footer {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Footer_text {
+  text-align: center;
+  color: gray;
+  margin: 0.9em 1em 0.5em 1em;
+  font-family: "Varela Round";
+  font-size: 0.9em;
+  
+}
+
+.Foot-left {
+  float: left;
+  width: 33vw;
+}
+
+.Foot-middle {
+  float: left;
+  width: 33vw;
+}
+
+.Foot-right {
+  float: right;
+  width: 33vw;
+}
+
+.svg-inline--fa {
+  font-size: 1.4em;
+}
+h1 {
+  color: white;
+}
+
+.LandingPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    135deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(254, 150, 119, 1) 0%,
+    rgba(237, 72, 99, 1) 100%
+  );
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+}
+
+.LandingPage .logo {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: bolder;
+  border: 1px solid white;
+  margin: 10rem;
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: white;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ButtonHome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #933f5f;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 4rem;
+  width: 40vw;
+  margin: 0;
+  position: absolute;
+  top:70%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #933f5f;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 4rem;
+  min-width: 60vw;
+  width: 13vw;
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+#pil_lila
+{
+  height: 5vw;
+  width: 5vw;
+    background-image: url(./pil_vit.png) ;
+    position: absolute;
+  right: 17%;
+  top: 13%;
+    background-size: 6vw 6vw;
+    border: none;
+}
+
+#pil_lila2
+{
+  height: 5vw;
+  width: 5vw;
+    background-image: url(./pil_vit.png) ;
+    position: absolute;
+  right: 8%;
+  top: 19%;
+    background-size: 6vw 6vw;
+    border: none;
+}
+
+.Button a {
+  color: white;
+  text-decoration: none;
+}
+
+.EnterInfo1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(254, 150, 119, 1) 0%,
+    rgba(237, 72, 99, 1) 100%
+  );
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+}
+.EnterInfo1 {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+.EnterInfo1 h1 {
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .Button {
+    width: 45vw;
+  }
+}
+
+.trashBtn,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  float: right;
+  margin: 1em;
+  color: #933f5f;
+}
+
+.plusIcon {
+  font-size: 3em;
+  float: right;
+  margin-right: 0.5em;
+  color: #933f5f;
+}
+
+
+
+.footercontainert {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #fbda61;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+}
+
+.footert {
+  position: relative;
+}
+.footert > div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: url(wave.png);
+}
