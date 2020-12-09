@@ -22,8 +22,8 @@ function App() {
 
 
 const [colorHome, setColorHome] = useState("#F7727D")
-const [colorBook, setColorBook] = useState("grey")
-const [colorGlassMartini, setColorGlassMartini] = useState("grey")  
+const [colorBook, setColorBook] = useState("#AAAAAA")
+const [colorGlassMartini, setColorGlassMartini] = useState("#AAAAAA")  
   
 const [brewList, setBrewList] = React.useState(JSON.parse(localStorage.getItem('myValueInLocalStorage')) || [])
 
@@ -46,19 +46,19 @@ React.useEffect(() => {
 
   function changeColorHome(){
       setColorHome("#F7727D");
-      setColorBook("grey");
-      setColorGlassMartini("grey");
+      setColorBook("#AAAAAA");
+      setColorGlassMartini("#AAAAAA");
   }
 
   function changeColorRecipie(){
-    setColorHome("grey");
-    setColorBook("grey");
+    setColorHome("#AAAAAA");
+    setColorBook("#AAAAAA");
     setColorGlassMartini("#F7727D");
 }
 function changeColorHandbook(){
-  setColorHome("grey");
+  setColorHome("#AAAAAA");
       setColorBook("#F7727D");
-      setColorGlassMartini("grey");
+      setColorGlassMartini("#AAAAAA");
   }
   
 
