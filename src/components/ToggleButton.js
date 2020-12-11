@@ -3,7 +3,8 @@ import { grey } from "@material-ui/core/colors"
 import React from "react"
 
 const buttonStyle = {
-    color: "#cd5b5f",
+    color: "#FE9677",
+    /*color: "#cd5b5f",*/
     backgroundColor: "white" ,
     zIndex: 1
 }

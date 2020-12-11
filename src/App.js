@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LandingPage from './components/LandingPage';
 import NewBrew from './pages/NewBrew';
 import ReceptPage from './pages/ReceptPage';
+import Handbook from './pages/Handbook';
 import './App.css';
 import Home from './pages/Home.js';
 import {
@@ -72,6 +73,9 @@ function changeColorHandbook(){
           <Route path="/Recepies">
             <ReceptPage /> 
           </Route>
+          <Route path="/Handbook">
+            <Handbook /> 
+          </Route>
           <Route path="/Home">
             <Home brewList={brewList} setBrewListFunction={setBrewListFunction} />
           </Route>
@@ -85,7 +89,7 @@ function changeColorHandbook(){
           <div class="Footer">
           <Link to="/Recepies" onClick={() => changeColorRecipie()} ><div class="Foot-left"> <p class="Footer_text" style = {{color: colorGlassMartini}}><div className="icon" >{hatIcon}</div> Recept </p> </div></Link>
           <Link to="/Home" onClick={() => changeColorHome()} ><i class="fas fa-home"></i><div class="Foot-middle"> <p class="Footer_text" style = {{color: colorHome}}> <div className="icon">{homeIcon}</div> Hem </p> </div></Link>
-          <div class="Foot-right" > <p class="Footer_text" ><div className="icon">{bookIcon}</div> Handbok </p> </div>
+          <Link to="/Handbook" onClick={() => changeColorHandbook()}><div class="Foot-right" > <p class="Footer_text" ><div className="icon">{bookIcon}</div> Handbok </p> </div></Link>
         </div>
       </Router>
     </div>

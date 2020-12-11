@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 .Wrapper {
   height: 0;
   background: rgb(2, 0, 36);
@@ -14,11 +13,8 @@
   );
 }
 
-
-
-#brygg_klar
-{
-  font-family: 'Varela Round', sans-serif;
+#brygg_klar {
+  font-family: "Varela Round", sans-serif;
   text-align: center;
 }
 
@@ -32,11 +28,10 @@ div.Footer {
 
 .Footer_text {
   text-align: center;
-  color:#AAAAAA;
+  color: gray;
   margin: 0.9em 1em 0.5em 1em;
   font-family: "Varela Round";
   font-size: 0.9em;
-  
 }
 
 .Foot-left {
@@ -91,7 +86,7 @@ h1 {
   font-style: italic;
 }
 
-.ButtonHome{
+.ButtonHome {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,15 +96,17 @@ h1 {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   border-radius: 4rem;
-  width: 40vw;
+  width: 55vw;
   margin: 0;
   position: absolute;
-  top:70%;
+  top: 70%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 3em;
 }
 
 .Button {
@@ -134,28 +131,26 @@ h1 {
   font-weight: 600;
 }
 
-#pil_lila
-{
+#pil_lila {
   height: 5vw;
   width: 5vw;
-    background-image: url(./pil_vit.png) ;
-    position: absolute;
-  right: 17%;
-  top: 13%;
-    background-size: 6vw 6vw;
-    border: none;
+  background-image: url(./pil_vit.png);
+  position: absolute;
+  right: 10%;
+  top: 17%;
+  background-size: 5vw 5vw;
+  border: none;
 }
 
-#pil_lila2
-{
+#pil_lila2 {
   height: 5vw;
   width: 5vw;
-    background-image: url(./pil_vit.png) ;
-    position: absolute;
+  background-image: url(./pil_vit.png);
+  position: absolute;
   right: 8%;
   top: 19%;
-    background-size: 6vw 6vw;
-    border: none;
+  background-size: 6vw 6vw;
+  border: none;
 }
 
 .Button a {
@@ -220,8 +215,6 @@ input[type="reset"] {
   margin-right: 0.5em;
   color: #933f5f;
 }
-
-
 
 .footercontainert {
   width: 100%;

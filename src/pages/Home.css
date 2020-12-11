@@ -1,97 +1,87 @@
 .Home {
-    text-align: center;
-    background-color: #f3606a;
-  }
-  
-  body{
-    background-color:  #f9f9f9;
-  }
+  text-align: center;
+  background-color: #f3606a;
+}
 
-  .Home-body
-  {
-    background-color: #f9f9f9;
-  }
-  
-  .Home-Wrapper
-  {
-    background: #f9f9f9;
-  }
-  
-  .Home-logo {
-    height: 40vmin;
-    pointer-events: none;
-    background-color: #f3606a;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .Home-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .Home-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .info
-  {
-    height: 70vw;
-    width: 100vw;
-    background: linear-gradient(
-      0deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(254, 150, 119, 1) 0%,
-      rgba(237, 72, 99, 1) 100%
-    );
-    border-radius: 0 0 300% 300%/ 0 0 125% 125%;
-  
-  }
-  
-  .top
-  {
-    
-    height: 10vw;
-  
-  }
-  
-  .middle
-  {
-    height: 25vw;
-    width: 100vw;
-    display: inline-block;
+body {
+  background-color: #f9f9f9;
+}
 
-    position: relative;
-    top: 10%;
+.Home-body {
+  background-color: #f9f9f9;
+}
+
+.Home-Wrapper {
+  background: #f9f9f9;
+}
+
+.Home-logo {
+  height: 40vmin;
+  pointer-events: none;
+  background-color: #f3606a;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
-  
-  
-  .bottom
-  {  
-    height: 20vw;
-    position: relative;
-    top: 8%;
+}
+
+.Home-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Home-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.info {
+  height: 70vw;
+  width: 100vw;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(254, 150, 119, 1) 0%,
+    rgba(237, 72, 99, 1) 100%
+  );
+  border-radius: 0 0 300% 300%/ 0 0 125% 125%;
+}
+
+.top {
+  height: 10vw;
+}
+
+.middle {
+  height: 25vw;
+  width: 100vw;
+  display: inline-block;
+
+  position: relative;
+  top: 10%;
+}
+
+.bottom {
+  height: 20vw;
+  position: relative;
+  top: 8%;
+}
+
   .övertext
   {
     font-family: "Montserrat", sans-serif;
@@ -111,8 +101,7 @@
     color: white;
   }
 
-  
-  .höger
+.höger
   {
     float: right;
     width:33vw;
@@ -129,95 +118,84 @@
     float: left;
     width: 33vw;
   }
-  
-  #fulvinsnamn
-  {
-    background-color: #f9f9f9;
-    margin-top: 4%;
-    width: 100vw;
-    height: 20vw;
-    text-align: center;
-  }
 
-  .prevone
-  {
-display: inline-block;
-height: 10vw;
-width: 10vw;
-position: absolute;
-left:2%;
-background-color: white;
-transform: rotate(180deg);
-  }
+#fulvinsnamn {
+  background-color: #f9f9f9;
+  margin-top: 4%;
+  width: 100vw;
+  height: 20vw;
+  text-align: center;
+}
 
-  #prevAvailable
-  {
-    height: 10vw;
-width: 10vw;
-    background-image: url(../pil_lila.png) ;
-    background-color: #f9f9f9;
-    background-size: 10vw 10vw;
-    border: none;
-  }
-  #prevUnavailable
-  {
-    height: 10vw;
-width: 10vw;
-    background-image: url(../pil_lila.png) ;
-    background-color: #f9f9f9;
-    background-size: 10vw 10vw;
-    opacity: 0.4;
-    border: none;
-  }
+.prevone {
+  display: inline-block;
+  height: 10vw;
+  width: 10vw;
+  position: absolute;
+  left: 2%;
+  background-color: white;
+  transform: rotate(180deg);
+}
 
-  #nextAvailable
-  {
-    height: 10vw;
-    width: 10vw;
-        background-image: url(../pil_lila.png) ;
-        background-size: 10vw 10vw;
-        background-color: #f9f9f9;
-        border: none;
-  }
- 
-  #nextUnavailable
-  {
-    height: 10vw;
-    width: 10vw;
-        background-image: url(../pil_lila.png) ;
-        background-size: 10vw 10vw;
-        background-color: #f9f9f9;
-        opacity: 0.5;
-        border: none;
-  }
+#prevAvailable {
+  height: 10vw;
+  width: 10vw;
+  background-image: url(../pil_lila.png);
+  background-color: #f9f9f9;
+  background-size: 10vw 10vw;
+  border: none;
+}
+#prevUnavailable {
+  height: 10vw;
+  width: 10vw;
+  background-image: url(../pil_lila.png);
+  background-size: 10vw 10vw;
+  opacity: 0.5;
+  border: none;
+}
 
+#nextAvailable {
+  height: 10vw;
+  width: 10vw;
+  background-image: url(../pil_lila.png);
+  background-size: 10vw 10vw;
+  background-color: #f9f9f9;
+  border: none;
+}
 
+#nextUnavailable {
+  height: 10vw;
+  width: 10vw;
+  background-image: url(../pil_lila.png);
+  background-size: 10vw 10vw;
+  background-color: #f9f9f9;
+  opacity: 0.5;
+  border: none;
+}
 
-  #checkButton{
-    position: absolute;
-    top: 63%;
-    
-    right: 10%;
-  }
-  .prevtwo
-  {
-display: inline-block;
-height: 10vw;
-width: 70vw;
-position: absolute;
-left: 15vw;
-background-color: #f9f9f9;
-  }
-  .prevtre
-  {
-display: inline-block;
-height: 10vw;
-position: absolute;
-right:0%;
-right: 2%
-  }
+#checkButton {
+  position: absolute;
+  top: 63%;
 
-  .trashBtn,
+  right: 10%;
+}
+.prevtwo {
+  display: inline-block;
+  height: 10vw;
+  width: 70vw;
+  position: absolute;
+  left: 15vw;
+  background-color: #f9f9f9;
+}
+.prevtre {
+  display: inline-block;
+  height: 10vw;
+  position: absolute;
+  right: 0%;
+  right: 2%;
+}
+
+.trashBtn,
 input[type="submit"],
 input[type="reset"] {
   background: none;
@@ -232,202 +210,194 @@ input[type="reset"] {
   color: #933f5f;
 }
 
-
-
-.backbtn
- {
- 
-  width: 10.1vw;
-     height: 10vw;
-     font-size: 8pt;
-     background-image: url(../pil_lila.png) ;
-     transform:rotate(180deg);
-      background-size: 10vw 10vw;
-      background-color: white;
-     margin-top: 1px;
-     margin-right: 2px;
-     position:absolute;
-     top:5%;
-     left:0;
-     border: 0;
-     
+.plusBtn,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin: 1em;
+  right: 0;
+  top: 80%;
+  width: 40px;
+  height: 40px;
+  background-color: #f7727d;
+  border-radius: 50%;
+  position: fixed;
+  color: white;
 }
 
+.backbtn {
+  width: 10.1vw;
+  height: 10vw;
+  font-size: 8pt;
+  background-image: url(../pil_lila.png);
+  transform: rotate(180deg);
+  background-size: 10vw 10vw;
+  background-color: white;
+  margin-top: 1px;
+  margin-right: 2px;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  border: 0;
+}
 
+.fulvinsnamn_text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 8vw;
+  text-align: center;
+  color: #933f5f;
+  margin: 0;
+}
 
-
-  .fulvinsnamn_text
-  {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 8vw;
-    text-align: center;
-    color: #933f5f;
-    margin: 0;
-  }
-  
- #kommande
- {
+#kommande {
   margin-bottom: 10%;
- }
-  
- #avslutade
- {
-  margin-bottom: 30%;
- }
+}
 
-  #kommande_text
-  {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 4vw;
-    font-weight: bold;
-    text-align: center;
-    color: #3F4266;
-  }
-  
-  #uppgift
-  {
-  background-color:white;
+#avslutade {
+  margin-bottom: 30%;
+}
+
+#kommande_text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  color: #3f4266;
+}
+
+#uppgift {
+  background-color: white;
   width: 90vw;
   margin: auto;
   padding-bottom: 2%;
   box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
   min-height: 30vw;
-  }
+}
 
-  #uppgiftAvslutad
-  {
+#uppgiftAvslutad {
   background-color: white;
   opacity: 0.5;
   width: 90vw;
   margin: auto;
   padding-bottom: 2%;
   box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.15);
-  }
-  
-  #datum
-  {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:500;
-    font-size: 6vw;
-    text-align: center;
-    height: 4vw;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    color: #933f5f;
-  }
-  
-  #uppgift_text
-  {
-      font-family: 'Varela Round', sans-serif;
-    font-size: 3.5vw;
-    color: #3F4266;
-    margin: 5%;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 3%;
-    
-  }
+}
 
-  #mitt{
-    position: relative;
-    width: 25vw;
-    height: 19vw;
-    overflow: hidden;
-    float:left;
-    margin-left: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
-    border-left:    1px solid white;
-  border-right:  1px solid white; 
+#datum {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 6vw;
+  text-align: center;
+  height: 4vw;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  color: #933f5f;
+}
+
+#uppgift_text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 3.5vw;
+  color: #3f4266;
+  margin: 5%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+#mitt {
+  position: relative;
+  width: 25vw;
+  height: 19vw;
+  overflow: hidden;
+  float: left;
+  margin-left: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   border-bottom: 1px solid white;
-  }
+}
 
-  #taskText
-  {
-    text-align: center;
-  }
+#taskText {
+  text-align: center;
+}
 
-  @keyframes animate
-  {
-    0%
-    {
-      background-position-x: 0; 
-    }
-    100%
-    {
-      background-position-x: 20vw;
-    }
+@keyframes animate {
+  0% {
+    background-position-x: 0;
   }
-  
-  .wave1
-  {
-    position: absolute;;
-    width: 22.5vw;
-    height: 10vw;
-    background-image: url(../wave.png);
-    background-size: 30vw;
-    animation: animate; 
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    z-index: 1000;
-    opacity: 1;
-    animation-delay: 0s;
-    margin-top: 1%;
-    transform: rotate(180deg);
-    
+  100% {
+    background-position-x: 20vw;
   }
+}
 
-  @keyframes animate2
-  {
-    0%
-    {
-      background-position-x: 0; 
-    }
-    100%
-    {
-      background-position-x: -10vw;
-    }
-  }
+.wave1 {
+  position: absolute;
+  width: 22.5vw;
+  height: 10vw;
+  background-image: url(../wave.png);
+  background-size: 30vw;
+  animation: animate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  margin-top: 1%;
+  transform: rotate(180deg);
+}
 
-  .wave2
-  {
-    width: 22.5vw;
-    height: 10vw;
-    
-    position: absolute;
-    background-image: url(../wave.png);
-    background-size: 30vw;
-    animation: animate2; 
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    z-index: 999;
-    opacity: 0.5;
-    animation-delay: 0s;
-transform: rotate(180deg);
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
   }
+  100% {
+    background-position-x: -10vw;
+  }
+}
 
-  .wave3
-  {
-    width: 22.5vw;
-    position: absolute;
-    height: 10vw;
-    background-image: url(../wave.png);
-    background-size: 30vw;
-    animation: animate2; 
-    animation-duration: 10  s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    z-index: 999;
-    opacity: 0.3;
-    animation-delay: 0s;
-transform: rotate(180deg);
-  }
+.wave2 {
+  width: 22.5vw;
+  height: 10vw;
 
-  .wave4
-  {
-    width: 22.5vw;
-    position: absolute;
-    height: 13vw;
-    background-color: white;
-   top:20%;
-  }
+  position: absolute;
+  background-image: url(../wave.png);
+  background-size: 30vw;
+  animation: animate2;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: 0s;
+  transform: rotate(180deg);
+}
+
+.wave3 {
+  width: 22.5vw;
+  position: absolute;
+  height: 10vw;
+  background-image: url(../wave.png);
+  background-size: 30vw;
+  animation: animate2;
+  animation-duration: 10 s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  z-index: 999;
+  opacity: 0.3;
+  animation-delay: 0s;
+  transform: rotate(180deg);
+}
+
+.wave4 {
+  width: 22.5vw;
+  position: absolute;
+  height: 13vw;
+  background-color: white;
+  top: 20%;
+}

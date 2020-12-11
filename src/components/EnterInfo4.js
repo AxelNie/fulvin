@@ -2,7 +2,7 @@ import '../App.css';
 import React, { useState } from "react";
 import Button from './Button';
 import '../EnterInfo.css';
-import { createStyles, Slider } from '@material-ui/core'
+import { createStyles, Slider, withStyles } from '@material-ui/core'
 
 import ToggleButton from './ToggleButton'
 
@@ -73,22 +73,29 @@ calcValues(ratio, volume, volumePref)
     <div class="EnterInfoone">
       <div id="top">
         <header>
-          <h1>Hur mycket?</h1>
+          <h1>HUR MYCKET?</h1>
         </header>
       </div>
       <div id="content">
         <p id="info"> Ange mängd i antal liter utblandat eller satser </p>
 
-        <div class="btn-group">
-          <ToggleButton active={volumePref} option1="Liter" option2="Satser" onToggle={setVolumePref}>
-          </ToggleButton>
+        <div id="button-and-input">
+          <div class="btn-group-2">
+            <ToggleButton active={volumePref} option1="Liter" option2="Satser" onToggle={setVolumePref}>
+            </ToggleButton>
+          </div>
+          <input id="Input2" type="text2" placeholder="Ex. 80" onChange={(e) => setVolume(e.target.value)} ></input>
         </div>
 
-        <input class="Input" type="text" placeholder="Ange mängd" onChange={(e) => setVolume(e.target.value)} ></input>
-        <Slider marks={marks} valueLabelDisplay="auto" defaultValue={50} step={10} max={maxi} min={0} color="white" onChange={getValue} text={getValue}  ></Slider>
-        <p>{ratio}</p>
-        {volumePref === "Liter"  && volume > 0 && <p>Ger {volumeBatch} satser och {volumeLiter} liter utblandat</p> }
-        {volumePref === "Satser" && <p>Ger {volumeLiter} liter</p>}
+        <p id="info-text">Andel fulvin</p>
+
+        <div id="slider-and-text">
+          <Slider valueLabelDisplay="auto" defaultValue={50} step={10} max={maxi} min={0} color="white" onChange={getValue} text={getValue}  ></Slider>
+          <p id="slider-text">{ratio}%</p>
+        </div>
+
+        {volumePref === "Liter"  && volume > 0 && <p>Ger {volumeBatch} satser och {Math.round(volumeLiter,1)} liter utblandat</p> }
+        {volumePref === "Satser" && <p>Ger {Math.round(volumeLiter,1)} liter utblandat</p>}
 
      
 
@@ -106,6 +113,10 @@ calcValues(ratio, volume, volumePref)
     </div>
 
   );
+
+
+
+
 }
 
 export default EnterInfo4;

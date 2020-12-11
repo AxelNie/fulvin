@@ -7,12 +7,19 @@ import TaskCompleted from '../components/TaskCompleted'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'	
 import { faTrash } from '@fortawesome/free-solid-svg-icons'	
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import NewBrew from "./NewBrew";
+import {
+  BrowserRouter as Router,
+  Link,
+} from "react-router-dom";
 import Wave from 'react-wavify'
 
 
 const checkButtonIcon = <FontAwesomeIcon icon={faCheckSquare} color="#F7727D"/>	
 
 const trashIcon = <FontAwesomeIcon icon={faTrash} />
+const plusIcon = <FontAwesomeIcon icon ={faPlus} /> 
 
 function Home({  brewList, setBrewListFunction}) {
   const [activeStepList, setActiveStepList] = useState([0, 0, 0, 0, 0]); //index 0 = active step for nBrew= 0
@@ -152,15 +159,7 @@ function Home({  brewList, setBrewListFunction}) {
               </p>
             </div>
             
-            {/*
-            <div class="progress">
-            <div class="circle">
-            <div class="wave"></div>
-              </div>
-            </div>
-            */}
-            
-          <div class="progress">
+             <div class="progress">
             <Wave mask="url(#mask)" fill="white" options={{
             height: calcProgressBar(brewList[nBrew]['sugarAmount'], brewList[nBrew]['finalDate']),
             amplitude: 2,
@@ -178,15 +177,8 @@ function Home({  brewList, setBrewListFunction}) {
               </defs>
             </Wave>
           </div>
-              {/*   
-            <div id="mitt"> 
-            <div class="wave1"> </div>
-            <div class="wave2"> </div>
-            <div class="wave3"> </div>
-            <div class="wave4"> </div>
-            </div>
 
-    */}  
+           
           <div class="höger"> 
             <p class="övertext"> {daysUntilNextTask()} Dagar</p>
             <p class="undertext"> till nästa uppgift </p>
@@ -195,15 +187,15 @@ function Home({  brewList, setBrewListFunction}) {
 
           <div class="bottom">
 
-            <div class="vänster"> <p class="övertext"> {brewList[nBrew]['volumeBatch']} </p>
-              <p class="undertext"> Satser </p></div>
+            <div class="vänster"> <p class="övertext"> { } </p>
+              <p class="undertext"> Satser : {brewList[nBrew]['volumeBatch']}</p></div>
 
             <div class="mitten"> <p class="övertext"> {Math.round(calcAlcohol(brewList[nBrew]['ratio'],brewList[nBrew]['sugarAmount']))}% </p>
               <p class="undertext"> Alkohol </p> </div>
 
 
-            <div class="höger"> <p class="övertext"> {Math.round(brewList[nBrew]['volumeLiter']) } </p>
-              <p class="undertext"> Liter totalt  </p>
+            <div class="höger"> <p class="övertext"> { } </p>
+              <p class="undertext"> Liter totalt: {Math.round(brewList[nBrew]['volumeLiter'])} </p>
             </div>
 
           </div>
@@ -216,19 +208,22 @@ function Home({  brewList, setBrewListFunction}) {
           </div>
 
           <div class="prevtwo"> 
-            <p class="fulvinsnamn_text"> {brewList[nBrew]['name']} </p>
+            <p class="fulvinsnamn_text"> {brewList[nBrew]['name']} </p>    
           </div>
           
           <div class="prevtre">
           <button id= {nextId} onClick={() => increaseNBrew()}></button>
           </div>
         </div>
+        <div classname="plus1">
+        <Link to="/NewBrew"><button className="plusBtn"> <div className="icon">{plusIcon}</div></button></Link>
+        </div>
 
       <div id="kommande"> <p id="kommande_text"> Kommande uppgifter </p>
         {brewList[nBrew]['activeStep'] < 3 && checkButton==true && <div id="checkButton" onClick={updateTasks}>{checkButtonIcon}</div>} 
           <Task  months = {months} brewList={brewList} nBrew={nBrew}></Task>
       </div>
-        
+
       <div id="avslutade"> <p id="kommande_text"> Avslutade uppgifter </p>
         <TaskCompleted months = {months} brewList={brewList} nBrew={nBrew}></TaskCompleted>
       </div>
@@ -285,7 +280,6 @@ function Home({  brewList, setBrewListFunction}) {
       return ratio * 0.01 * 14;
     }
   }
-
   function calcProgressBar(sugarAmount, finalDate){ //Returnar värden mellan 5 och 60
 var daysUntilDone = daysBetween(new Date(), new Date(finalDate));
 console.log("Days:")
@@ -302,7 +296,6 @@ console.log(daysUntilDone)
   }
   
 }
-
 
 
 
