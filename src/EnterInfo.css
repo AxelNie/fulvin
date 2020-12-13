@@ -188,11 +188,17 @@ button.react-calendar__navigation__arrow {
   color: white;
 }
 
+.react-calendar__navigation {
+
+  margin-bottom: 0em;
+}
+
 div.react-calendar {
   background-color: #d45e66;
   border: none;
   position: relative;
   z-index: 999;
+  margin-left: -6vw;
 }
 
 /* dagens datum */
@@ -218,6 +224,8 @@ button.react-calendar__tile {
   width: 10vw;
   font-family: "Varela Round", sans-serif;
   font: "Varela Round", sans-serif;
+  padding: 0.6em 0.5em;
+  padding-top: 0;
 }
 
 div.react-date-picker__inputGroup {
@@ -240,7 +248,7 @@ input.react-date-picker__inputGroup__input {
 div.react-date-picker__wrapper {
   border: none;
   width: 80vw;
-  padding-left: 15vw;
+  padding-left: 0vw;
 }
 
 button.react-date-picker__clear-button {
@@ -444,4 +452,13 @@ p{
 #info-text{
   position: relative;
   top: 3%;
+}
+
+div.contain
+{
+ width: 100vw;
+ height: 50vw;
+ top: 50.4%;
+ left:22.5%;
+ position: fixed;
 }

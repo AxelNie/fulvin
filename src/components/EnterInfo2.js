@@ -37,11 +37,14 @@ const EnterInfo2 = ({ onInput }) => {
          </ToggleButton>
      
         </div>
-        <DatePicker className="DatePick" value={date} onChange={setDate} />
+         </div>
+        <div class="contain">
+          <DatePicker className="DatePick" value={date} onChange={setDate} />
+        
 
-
-      </div>
+     
       <Button onClick={() => onInput(date, datePref)}>NÄSTA</Button>
+        </div>
       <div class="footer_dot">
         <div class="grey"></div>
         <div class="white"></div>
