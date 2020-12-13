@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/fulvin/Home/static/css/main.e58aa75b.chunk.css",
-    "main.js": "/fulvin/Home/static/js/main.fd8436e3.chunk.js",
-    "main.js.map": "/fulvin/Home/static/js/main.fd8436e3.chunk.js.map",
+    "main.css": "/fulvin/Home/static/css/main.ede84bc1.chunk.css",
+    "main.js": "/fulvin/Home/static/js/main.2c11d835.chunk.js",
+    "main.js.map": "/fulvin/Home/static/js/main.2c11d835.chunk.js.map",
     "runtime-main.js": "/fulvin/Home/static/js/runtime-main.85558ed0.js",
     "runtime-main.js.map": "/fulvin/Home/static/js/runtime-main.85558ed0.js.map",
     "static/css/2.0c21754d.chunk.css": "/fulvin/Home/static/css/2.0c21754d.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.fcaf155e.chunk.js.map": "/fulvin/Home/static/js/3.fcaf155e.chunk.js.map",
     "index.html": "/fulvin/Home/index.html",
     "static/css/2.0c21754d.chunk.css.map": "/fulvin/Home/static/css/2.0c21754d.chunk.css.map",
-    "static/css/main.e58aa75b.chunk.css.map": "/fulvin/Home/static/css/main.e58aa75b.chunk.css.map",
+    "static/css/main.ede84bc1.chunk.css.map": "/fulvin/Home/static/css/main.ede84bc1.chunk.css.map",
     "static/js/2.931f07ed.chunk.js.LICENSE.txt": "/fulvin/Home/static/js/2.931f07ed.chunk.js.LICENSE.txt",
     "static/media/EnterInfo.css": "/fulvin/Home/static/media/vitdot.png.c073a39a.png",
     "static/media/ReceptPage.css": "/fulvin/Home/static/media/jonte.31ab8c26.jpg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.85558ed0.js",
     "static/css/2.0c21754d.chunk.css",
     "static/js/2.931f07ed.chunk.js",
-    "static/css/main.e58aa75b.chunk.css",
-    "static/js/main.fd8436e3.chunk.js"
+    "static/css/main.ede84bc1.chunk.css",
+    "static/js/main.2c11d835.chunk.js"
   ]
 }
