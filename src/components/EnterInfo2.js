@@ -11,7 +11,7 @@ console.log("hjahdjhaskldjaksldjklaasjkldjaskjka")
 
 const EnterInfo2 = ({ onInput }) => {
   const [date, setDate] = useState(new Date());
-  const [datePref, setDatePref] = useState("initialDate");
+  const [datePref, setDatePref] = useState("Start");
 
   const updateDatePref = (e) => {
     

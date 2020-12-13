@@ -57,7 +57,7 @@ React.useEffect(() => {
     setColorGlassMartini("#F7727D");
 }
 function changeColorHandbook(){
-  setColorHome("#AAAAAA");
+      setColorHome("#AAAAAA");
       setColorBook("#F7727D");
       setColorGlassMartini("#AAAAAA");
   }
@@ -89,7 +89,7 @@ function changeColorHandbook(){
           <div class="Footer">
           <Link to="/Recepies" onClick={() => changeColorRecipie()} ><div class="Foot-left"> <p class="Footer_text" style = {{color: colorGlassMartini}}><div className="icon" >{hatIcon}</div> Recept </p> </div></Link>
           <Link to="/Home" onClick={() => changeColorHome()} ><i class="fas fa-home"></i><div class="Foot-middle"> <p class="Footer_text" style = {{color: colorHome}}> <div className="icon">{homeIcon}</div> Hem </p> </div></Link>
-          <Link to="/Handbook" onClick={() => changeColorHandbook()}><div class="Foot-right" > <p class="Footer_text" ><div className="icon">{bookIcon}</div> Handbok </p> </div></Link>
+          <Link to="/Handbook" onClick={() => changeColorHandbook()}><div class="Foot-right" > <p class="Footer_text" style = {{color: colorBook}}><div className="icon">{bookIcon}</div> Handbok </p> </div></Link>
         </div>
       </Router>
     </div>

@@ -10,7 +10,7 @@ const TaskCompleted = ({ brewList, nBrew, months }) => {
 "Häll i fruksaften och fyll på med 10 liter kallt vatten. Tillsätt jästnärsalt," +
 "påse A och skaka om noga. Temperaturen bör nu vara 25-30 grader. Tillsätt jästen, påse 1" +
 ", låt stå 10 minuter och skaka sedan om ordentligt. Sätt på jäsrör och låt stå i jämn temperatur" +
-", inte under 20 grader."
+", inte under 20 grader." 
 
 var text2 = "Jäsningen tar i regel 4 dagar. Det ska då ha slutat bubbla ur jäsröret, " +
 "vinet ska ha börjat klarna vid ytan och inte längre smaka sött. Detta gäller vid angivna " +

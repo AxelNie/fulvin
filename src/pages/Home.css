@@ -11,9 +11,10 @@ body {
   background-color: #f9f9f9;
 }
 
-.Home-Wrapper {
+.Wrapper {
   background: #f9f9f9;
 }
+
 
 .Home-logo {
   height: 40vmin;
@@ -84,7 +85,7 @@ body {
 
   .övertext
   {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Varela Round", sans-serif;
     font-weight: 500;
   font-size: 5vw;
   margin: 0;
@@ -213,7 +214,7 @@ input[type="reset"] {
 .plusBtn,
 input[type="submit"],
 input[type="reset"] {
-  background: none;
+  z-index: 1;
   color: inherit;
   border: none;
   padding: 0;
@@ -260,7 +261,7 @@ input[type="reset"] {
 }
 
 #avslutade {
-  margin-bottom: 30%;
+  padding-bottom: 20%;
 }
 
 #kommande_text {
@@ -288,6 +289,7 @@ input[type="reset"] {
   padding-bottom: 2%;
   box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.15);
 }
+
 
 #datum {
   font-family: "Montserrat", sans-serif;

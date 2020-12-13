@@ -5,32 +5,27 @@ function ReceptPage () {
   
   return (
     
-    <div className='receptPage'>
-      <div className='header'><h1 className='receptHeader'>Recept</h1></div>
+    <div className='Recept'>
+     <div className='breaker1'><h2 className='handbookHeader'>Recept</h2></div>
       <div className='recept'>
-        <div className='receptIcon1' />
-        <div className='receptOne'>
-          <h2 className='receptName'>Majs</h2>
-          <ul className='receptParts1'>
-          20% FUN Light Tropical Fruits
-            <br />
-            <br />
-          80% Vatten
+        <div className='Majs'>
+          <h2 className='rubriker'>Majs</h2>
+          <ul className="receptList">
+            <li>20% FUN Light Tropical Fruits</li>
+            <li>80% Vatten</li>
           </ul>
+            <div className="receptIcon1"></div>
         </div>
-        <div className='receptIcon2' />
-        <div className='receptTwo'>
-          <h2 className='receptName'>3Cant</h2>
-          <ul className='receptParts2'>
-          20% Ica basic röda bär
-            <br />
-            <br />
-          80% Vatten
+        <div className='cant'>
+          <h2 className='rubriker'>3Cant</h2>
+          <ul className="receptList">
+            <li>20% Ica Basic Röda Bär</li>
+            <li>80% Vatten</li>
           </ul>
+          <div className="receptIcon2"></div>
         </div>
 
       </div>
-      <div className='breaker' />
     </div>
   )
 }

@@ -172,7 +172,7 @@ function Home({  brewList, setBrewListFunction}) {
                   <stop offset="4.5" stopColor="black" />
                 </linearGradient>
                 <mask id="mask">
-                  <rect x="0" y="0" width="2000" height="71" fill="url(#gradient)"  />
+                  <rect x="0" y="0" width="2000" height="10.6vh" fill="url(#gradient)"  />
                 </mask>
               </defs>
             </Wave>
@@ -190,7 +190,7 @@ function Home({  brewList, setBrewListFunction}) {
             <div class="vänster"> <p class="övertext"> { } </p>
               <p class="undertext"> Satser : {brewList[nBrew]['volumeBatch']}</p></div>
 
-            <div class="mitten"> <p class="övertext"> {Math.round(calcAlcohol(brewList[nBrew]['ratio'],brewList[nBrew]['sugarAmount']))}% </p>
+            <div class="mitten"> <p class="övertext"> {Math.round(calcAlcohol(brewList[nBrew]['ratio'],brewList[nBrew]['sugarAmount']),2)}% </p>
               <p class="undertext"> Alkohol </p> </div>
 
 
@@ -218,15 +218,18 @@ function Home({  brewList, setBrewListFunction}) {
         <div classname="plus1">
         <Link to="/NewBrew"><button className="plusBtn"> <div className="icon">{plusIcon}</div></button></Link>
         </div>
+       
 
-      <div id="kommande"> <p id="kommande_text"> Kommande uppgifter </p>
+        <div id="kommande"> <p id="kommande_text"> Kommande uppgifter </p>
         {brewList[nBrew]['activeStep'] < 3 && checkButton==true && <div id="checkButton" onClick={updateTasks}>{checkButtonIcon}</div>} 
           <Task  months = {months} brewList={brewList} nBrew={nBrew}></Task>
-      </div>
+        </div>
 
-      <div id="avslutade"> <p id="kommande_text"> Avslutade uppgifter </p>
+        <div id="avslutade"> <p id="kommande_text"> Avslutade uppgifter </p>
         <TaskCompleted months = {months} brewList={brewList} nBrew={nBrew}></TaskCompleted>
-      </div>
+        </div>
+
+      
     </div>
     );
   }
